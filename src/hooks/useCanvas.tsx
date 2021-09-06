@@ -14,13 +14,13 @@ export const useCanvas = () => {
     const [isAutoWidth, setIsAutoWidth] = useState<boolean>(false);
     const [isEraser, setIsEraser] = useState<boolean>(false);
 
-    const [currentColor, setCurrentColor] = useState<string>("#000000");
+    const [currentColor, setCurrentColor] = useState<string>("#ffffff");
     const [currentWidth, setCurrentWidth] = useState<number>(10);
 
     const autoWidth = useRef<boolean>(false);
     const selectedSaturation = useRef<number>(100);
     const selectedLightness = useRef<number>(10);
-    const selectedColor = useRef<string>("#000000");
+    const selectedColor = useRef<string>("#ffffff");
     const selectedLineWidth = useRef<number>(10);
     const lastX = useRef<number>(0);
     const lastY = useRef<number>(0);

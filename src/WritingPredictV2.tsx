@@ -4,6 +4,7 @@ import { Canvas } from "./components/Canvas";
 import { Toolbar } from "./components/Toolbar";
 import { BASE_URL } from "./constants";
 import axios from "axios";
+import {  toast } from 'react-toastify';
 
 export const WritingPredictV2 = () => {
   const [{ canvas, isReady, ...state }, { init, clear, ...api }] = useCanvas();
@@ -33,12 +34,12 @@ export const WritingPredictV2 = () => {
               showPrediction: true,
             })
           ).catch(() => {
-            alert("Failed to predict")
+            toast.warn("Failed to predict")
         });
 
         }
       }).catch(() => {
-          alert("Failed to upload image")
+          toast.warn("Failed to upload image")
       });
     }
     xhr.send();
@@ -61,12 +62,12 @@ export const WritingPredictV2 = () => {
         </div>}
       <Toolbar
         {...toolbarProps}
-        className="w-full p-4 absolute bg-white"
+        className="w-full p-4 absolute bg-black"
       />
       <Canvas
         width={state.currentWidth}
         ref={canvas}
-        className={"h-screen w-screen border"}
+        className={"h-screen w-screen bg-black"}
       />
     </>
   );
