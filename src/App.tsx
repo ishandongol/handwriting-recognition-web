@@ -1,13 +1,12 @@
+import { WritingPredictV2 } from "./WritingPredictV2";
 
-import './App.css'
-import { Navbar } from './components';
+
 
 function App() {
+ 
+
   return (
-    <>
-    <Navbar/>
-  {/* <WritingPredict/> */}
-  </>
+      <WritingPredictV2 />
   );
 }
 
