@@ -1,6 +1,5 @@
 import { useCanvas } from "./hooks/useCanvas";
 import { useCallback, useState, useEffect } from "react";
-import { BrushPreview } from "./components/BrushPreview";
 import { Canvas } from "./components/Canvas";
 import { Toolbar } from "./components/Toolbar";
 import { BASE_URL } from "./constants";
@@ -27,15 +26,19 @@ export const WritingPredictV2 = () => {
       formData.append("image", blob);
       axios.post(BASE_URL + "/upload", formData).then(response => {
         if (response) {
-          axios.get(BASE_URL + "predict").then(resp =>
+          axios.get(BASE_URL + "/predict").then(resp =>
             setPrediction({
               prediction: resp.data.prediction,
               probability: resp.data.probability,
               showPrediction: true,
             })
-          );
+          ).catch(() => {
+            alert("Failed to predict")
+        });
 
         }
+      }).catch(() => {
+          alert("Failed to upload image")
       });
     }
     xhr.send();
@@ -53,14 +56,12 @@ export const WritingPredictV2 = () => {
   }, [clear])
   return (
     <>
-      <BrushPreview
-        currentWidth={state.currentWidth}
-        currentColor={state.currentColor}
-        className=" flex flex-col items-center justify-items-center  absolute -right-0 p-3 "
-      />
+       {prediction.showPrediction &&  <div className="absolute">
+            {JSON.stringify(prediction)}
+        </div>}
       <Toolbar
         {...toolbarProps}
-        className="w-full md:h-full p-4 md:w-2/12 absolute bg-white"
+        className="w-full p-4 absolute bg-white"
       />
       <Canvas
         width={state.currentWidth}
