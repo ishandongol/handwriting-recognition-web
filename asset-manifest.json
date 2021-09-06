@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/handwriting-recognition-web/static/css/main.f5bc93a6.chunk.css",
+    "main.js": "/handwriting-recognition-web/static/js/main.731fe230.chunk.js",
+    "main.js.map": "/handwriting-recognition-web/static/js/main.731fe230.chunk.js.map",
+    "runtime-main.js": "/handwriting-recognition-web/static/js/runtime-main.2faf3bfe.js",
+    "runtime-main.js.map": "/handwriting-recognition-web/static/js/runtime-main.2faf3bfe.js.map",
+    "static/js/2.1cb9ed59.chunk.js": "/handwriting-recognition-web/static/js/2.1cb9ed59.chunk.js",
+    "static/js/2.1cb9ed59.chunk.js.map": "/handwriting-recognition-web/static/js/2.1cb9ed59.chunk.js.map",
+    "static/js/3.1eb4f9d9.chunk.js": "/handwriting-recognition-web/static/js/3.1eb4f9d9.chunk.js",
+    "static/js/3.1eb4f9d9.chunk.js.map": "/handwriting-recognition-web/static/js/3.1eb4f9d9.chunk.js.map",
+    "index.html": "/handwriting-recognition-web/index.html",
+    "static/css/main.f5bc93a6.chunk.css.map": "/handwriting-recognition-web/static/css/main.f5bc93a6.chunk.css.map",
+    "static/js/2.1cb9ed59.chunk.js.LICENSE.txt": "/handwriting-recognition-web/static/js/2.1cb9ed59.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2faf3bfe.js",
+    "static/js/2.1cb9ed59.chunk.js",
+    "static/css/main.f5bc93a6.chunk.css",
+    "static/js/main.731fe230.chunk.js"
+  ]
+}
