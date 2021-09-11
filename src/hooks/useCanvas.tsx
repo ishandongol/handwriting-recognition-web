@@ -15,13 +15,13 @@ export const useCanvas = () => {
     const [isEraser, setIsEraser] = useState<boolean>(false);
 
     const [currentColor, setCurrentColor] = useState<string>("#ffffff");
-    const [currentWidth, setCurrentWidth] = useState<number>(10);
+    const [currentWidth, setCurrentWidth] = useState<number>(15);
 
     const autoWidth = useRef<boolean>(false);
     const selectedSaturation = useRef<number>(100);
     const selectedLightness = useRef<number>(10);
     const selectedColor = useRef<string>("#ffffff");
-    const selectedLineWidth = useRef<number>(10);
+    const selectedLineWidth = useRef<number>(15);
     const lastX = useRef<number>(0);
     const lastY = useRef<number>(0);
     const hue = useRef<number>(0);
@@ -120,8 +120,10 @@ export const useCanvas = () => {
     }, []);
     const onResize = useCallback(() => {
         if (canvas && canvas.current) {
-            canvas.current.width = window.innerWidth;
-            canvas.current.height = window.innerHeight;
+            // canvas.current.width = window.innerWidth;
+            // canvas.current.height = window.innerHeight;
+            canvas.current.width = 500;
+            canvas.current.height = 500;
         }
     }, [])
     const init = useCallback(() => {
@@ -144,6 +146,8 @@ export const useCanvas = () => {
             ctx.current.lineJoin = "round";
             ctx.current.lineCap = "round";
             ctx.current.lineWidth = 10;
+            ctx.current.fillStyle ="black";
+            ctx.current.fillRect(0,0,canvas.current.width,canvas.current.height)
             setIsReady(true);
         }
     }, [drawNormal, handleMouseDown, stopDrawing, handleTouchDown, isReady, onResize]);

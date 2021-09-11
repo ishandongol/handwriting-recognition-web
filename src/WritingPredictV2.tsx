@@ -65,19 +65,23 @@ export const WritingPredictV2 = () => {
     return clear
   }, [clear])
   return (
-    <>
-       {prediction.showPrediction &&  <div className="absolute">
+    <div className="relative mx-auto w-3/6 flex flex-col">
+     <div className="self-center">
+       <p className="my-4 text-3xl">Nepali Handwriting Recognition</p>
+     {prediction.showPrediction &&  <div className="absolute">
          <Prediction prediction={prediction.prediction} probability={prediction.probability}/>
         </div>}
+     <Canvas
+        brushWidth={state.currentWidth}
+        brushHeight={state.currentHeight}
+        ref={canvas}
+        className={"bg-black border"}
+      />
+     </div>
       <Toolbar
         {...toolbarProps}
-        className="w-full p-4 absolute bg-black"
+        className="p-4 self-center"
       />
-      <Canvas
-        width={state.currentWidth}
-        ref={canvas}
-        className={"h-screen w-screen bg-black"}
-      />
-    </>
+    </div>
   );
 };

@@ -6,10 +6,16 @@ export const Toolbar: React.FC<any> = ({
     className,
 }) => {
     return (
-        <div className={`${className} bottom-0`}>
-            <div className="py-3">
+        <div className={`${className}`} style={{width:'500px'}}>
+            <div className="py-3 flex">
+            <a href={"/"} className="bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 text-center my-4 rounded-full md:block mr-4 md:ml-0 flex-grow" onClick={(e) => {
+                    e.preventDefault()
+                    handleClear()
+                }}>
+                    Clear
+          </a>
                 <a
-                    className="bg-purple-700 hover:bg-purple-900 text-white font-bold py-2 px-4 text-center rounded-full md:block"
+                    className="bg-purple-700 hover:bg-purple-900 text-white font-bold py-2 px-4 text-center my-4  ml-4 rounded-full md:block flex-grow"
                     onClick={(e) =>{
                         e.preventDefault()
                         handlePredict()
@@ -19,12 +25,7 @@ export const Toolbar: React.FC<any> = ({
                 >
                     Predict
           </a>
-                <a href={"/"} className="bg-white hover:bg-gray-400 text-black font-bold py-2 px-4 text-center my-4 rounded-full md:block ml-4 md:ml-0" onClick={(e) => {
-                    e.preventDefault()
-                    handleClear()
-                }}>
-                    Clear
-          </a>
+                
             </div>
         </div>
     );
