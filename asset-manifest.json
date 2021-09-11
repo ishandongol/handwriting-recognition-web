@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/handwriting-recognition-web/static/css/main.8abf21ec.chunk.css",
-    "main.js": "/handwriting-recognition-web/static/js/main.50bc4a62.chunk.js",
-    "main.js.map": "/handwriting-recognition-web/static/js/main.50bc4a62.chunk.js.map",
+    "main.css": "/handwriting-recognition-web/static/css/main.70065bf1.chunk.css",
+    "main.js": "/handwriting-recognition-web/static/js/main.8cc62cc9.chunk.js",
+    "main.js.map": "/handwriting-recognition-web/static/js/main.8cc62cc9.chunk.js.map",
     "runtime-main.js": "/handwriting-recognition-web/static/js/runtime-main.58efb13f.js",
     "runtime-main.js.map": "/handwriting-recognition-web/static/js/runtime-main.58efb13f.js.map",
     "static/css/2.b783f583.chunk.css": "/handwriting-recognition-web/static/css/2.b783f583.chunk.css",
-    "static/js/2.4bc1d010.chunk.js": "/handwriting-recognition-web/static/js/2.4bc1d010.chunk.js",
-    "static/js/2.4bc1d010.chunk.js.map": "/handwriting-recognition-web/static/js/2.4bc1d010.chunk.js.map",
+    "static/js/2.7e14ed25.chunk.js": "/handwriting-recognition-web/static/js/2.7e14ed25.chunk.js",
+    "static/js/2.7e14ed25.chunk.js.map": "/handwriting-recognition-web/static/js/2.7e14ed25.chunk.js.map",
     "static/js/3.ca8461c9.chunk.js": "/handwriting-recognition-web/static/js/3.ca8461c9.chunk.js",
     "static/js/3.ca8461c9.chunk.js.map": "/handwriting-recognition-web/static/js/3.ca8461c9.chunk.js.map",
     "index.html": "/handwriting-recognition-web/index.html",
     "static/css/2.b783f583.chunk.css.map": "/handwriting-recognition-web/static/css/2.b783f583.chunk.css.map",
-    "static/css/main.8abf21ec.chunk.css.map": "/handwriting-recognition-web/static/css/main.8abf21ec.chunk.css.map",
-    "static/js/2.4bc1d010.chunk.js.LICENSE.txt": "/handwriting-recognition-web/static/js/2.4bc1d010.chunk.js.LICENSE.txt"
+    "static/css/main.70065bf1.chunk.css.map": "/handwriting-recognition-web/static/css/main.70065bf1.chunk.css.map",
+    "static/js/2.7e14ed25.chunk.js.LICENSE.txt": "/handwriting-recognition-web/static/js/2.7e14ed25.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.58efb13f.js",
     "static/css/2.b783f583.chunk.css",
-    "static/js/2.4bc1d010.chunk.js",
-    "static/css/main.8abf21ec.chunk.css",
-    "static/js/main.50bc4a62.chunk.js"
+    "static/js/2.7e14ed25.chunk.js",
+    "static/css/main.70065bf1.chunk.css",
+    "static/js/main.8cc62cc9.chunk.js"
   ]
 }
