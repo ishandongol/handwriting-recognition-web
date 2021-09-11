@@ -1,7 +1,13 @@
 export interface PredictionProps {
   prediction: string;
-  probability: number;
+  probability: string;
 }
-export const Prediction = (props:PredictionProps) => {
-  return <div className="bg-white p-5"><span>{props.prediction}</span> <span>{props.probability}</span></div>;
+export const Prediction = (props: PredictionProps) => {
+  return (
+    <div className="bg-white p-5 rounded-md m-3">
+        <div className="text-2xl text-gray-600">Prediction</div>
+      <div className="text-3xl md:text-6xl my-4">{props.prediction}</div>{" "}
+      <div className="text-2xl text-gray-600">{parseFloat(props.probability)?.toPrecision(2)} %</div>
+    </div>
+  );
 };

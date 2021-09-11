@@ -7,16 +7,21 @@ import axios from "axios";
 import {  toast } from 'react-toastify';
 import { Prediction, PredictionProps } from "./components/Prediction";
 
+const initialState = {
+  prediction:'',
+  probability:'0',
+  showPrediction:false
+}
 interface PredictionState extends PredictionProps{
   showPrediction:boolean
 }
 export const WritingPredictV2 = () => {
-  const [{ canvas, isReady, ...state }, { init, clear, ...api }] = useCanvas();
-  const [prediction,setPrediction] = useState<PredictionState>({
-      prediction:'',
-      probability:0,
-      showPrediction:false
-  })
+  const [{ canvas, isReady, ...state }, { init, clear,handleClear, ...api }] = useCanvas();
+  const [prediction,setPrediction] = useState<PredictionState>(initialState)
+  const clearPrediction = () => {
+    handleClear()
+    setPrediction(initialState)
+  }
   const handlePredict = useCallback(() => {
     if (!canvas || !canvas.current) return;
     let blob = '';
@@ -50,7 +55,7 @@ export const WritingPredictV2 = () => {
 
 
   }, [canvas]);
-  const toolbarProps = { ...state, ...api, handlePredict };
+  const toolbarProps = { ...state, ...api, handlePredict, handleClear: clearPrediction };
   useEffect(() => {
     if (!isReady) {
       init()
