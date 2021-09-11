@@ -5,10 +5,14 @@ import { Toolbar } from "./components/Toolbar";
 import { BASE_URL } from "./constants";
 import axios from "axios";
 import {  toast } from 'react-toastify';
+import { Prediction, PredictionProps } from "./components/Prediction";
 
+interface PredictionState extends PredictionProps{
+  showPrediction:boolean
+}
 export const WritingPredictV2 = () => {
   const [{ canvas, isReady, ...state }, { init, clear, ...api }] = useCanvas();
-  const [prediction,setPrediction] = useState<{prediction:string,probability:number,showPrediction:boolean}>({
+  const [prediction,setPrediction] = useState<PredictionState>({
       prediction:'',
       probability:0,
       showPrediction:false
@@ -58,7 +62,7 @@ export const WritingPredictV2 = () => {
   return (
     <>
        {prediction.showPrediction &&  <div className="absolute">
-            {JSON.stringify(prediction)}
+         <Prediction prediction={prediction.prediction} probability={prediction.probability}/>
         </div>}
       <Toolbar
         {...toolbarProps}
