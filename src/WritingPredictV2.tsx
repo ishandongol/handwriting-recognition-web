@@ -73,7 +73,7 @@ export const WritingPredictV2 = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 container mx-auto">
       <div>
-        <p className="my-4 text-3xl">Instructions</p>
+        <p className="mb-4 text-2xl">Instructions</p>
         <p className="text-xl">Try to cover the whole canvas for better prediction.</p>
         <p className="text-md mt-3">Example:</p>
         <div className="grid gird-cols-1 md:grid-cols-2 gap-2 md:gap-4">
@@ -84,7 +84,7 @@ export const WritingPredictV2 = () => {
       </div>
       <div className="relative flex flex-col">
         <div className="self-end">
-          <p className="my-4 text-3xl">Nepali Handwriting Recognition</p>
+      <p className="text-xl">Write here:</p>
           {prediction.showPrediction && (
             <div className="absolute">
               <Prediction
