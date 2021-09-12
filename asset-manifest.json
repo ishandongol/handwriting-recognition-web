@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/handwriting-recognition-web/static/css/main.1a2265ee.chunk.css",
-    "main.js": "/handwriting-recognition-web/static/js/main.4cc78c84.chunk.js",
-    "main.js.map": "/handwriting-recognition-web/static/js/main.4cc78c84.chunk.js.map",
+    "main.css": "/handwriting-recognition-web/static/css/main.cf4ff7a5.chunk.css",
+    "main.js": "/handwriting-recognition-web/static/js/main.78b045b8.chunk.js",
+    "main.js.map": "/handwriting-recognition-web/static/js/main.78b045b8.chunk.js.map",
     "runtime-main.js": "/handwriting-recognition-web/static/js/runtime-main.a6754ad4.js",
     "runtime-main.js.map": "/handwriting-recognition-web/static/js/runtime-main.a6754ad4.js.map",
     "static/css/2.b783f583.chunk.css": "/handwriting-recognition-web/static/css/2.b783f583.chunk.css",
@@ -12,14 +12,17 @@
     "static/js/3.af309a0b.chunk.js.map": "/handwriting-recognition-web/static/js/3.af309a0b.chunk.js.map",
     "index.html": "/handwriting-recognition-web/index.html",
     "static/css/2.b783f583.chunk.css.map": "/handwriting-recognition-web/static/css/2.b783f583.chunk.css.map",
-    "static/css/main.1a2265ee.chunk.css.map": "/handwriting-recognition-web/static/css/main.1a2265ee.chunk.css.map",
-    "static/js/2.b57c347b.chunk.js.LICENSE.txt": "/handwriting-recognition-web/static/js/2.b57c347b.chunk.js.LICENSE.txt"
+    "static/css/main.cf4ff7a5.chunk.css.map": "/handwriting-recognition-web/static/css/main.cf4ff7a5.chunk.css.map",
+    "static/js/2.b57c347b.chunk.js.LICENSE.txt": "/handwriting-recognition-web/static/js/2.b57c347b.chunk.js.LICENSE.txt",
+    "static/media/cha.eaf1501a.png": "/handwriting-recognition-web/static/media/cha.eaf1501a.png",
+    "static/media/chha.dea262c0.png": "/handwriting-recognition-web/static/media/chha.dea262c0.png",
+    "static/media/ek.f8f08f1e.png": "/handwriting-recognition-web/static/media/ek.f8f08f1e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a6754ad4.js",
     "static/css/2.b783f583.chunk.css",
     "static/js/2.b57c347b.chunk.js",
-    "static/css/main.1a2265ee.chunk.css",
-    "static/js/main.4cc78c84.chunk.js"
+    "static/css/main.cf4ff7a5.chunk.css",
+    "static/js/main.78b045b8.chunk.js"
   ]
 }
